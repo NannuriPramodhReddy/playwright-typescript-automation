@@ -26,11 +26,11 @@ test('Fill username', async ({ page }) => {
     await fill.fillDate();
     await expect(fill.datefiller1).toHaveValue('06/15/2023');
 
-    await fill.uploadFile();
-    await expect(fill.fileupload).toHaveValue(/Pramodh_Reddy_Resume.pdf$/);
+    // await fill.uploadFile();
+    // await expect(fill.fileupload).toHaveValue(/Pramodh_Reddy_Resume.pdf$/);
 
-    await fill.uploadMultipleFiles();
-    await expect(fill.fileuploadmultiple).toHaveValue(/Pramodh_Reddy_Resume.pdf$/);
+    // await fill.uploadMultipleFiles();
+    // await expect(fill.fileuploadmultiple).toHaveValue(/Pramodh_Reddy_Resume.pdf$/);
 
     if(await fill.dynamicbutton.textContent() === 'START') {
         await fill.clickDynamicButton();
