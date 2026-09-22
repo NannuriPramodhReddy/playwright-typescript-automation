@@ -1,5 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 
+declare const process: {
+  env: {
+    CI?: string;
+  };
+};
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -15,8 +21,11 @@ export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
-  workers: 2,
   
+  workers: process.env.CI ? 2 : undefined,
+
+  retries: process.env.CI ? 2 : 0,
+
   
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
