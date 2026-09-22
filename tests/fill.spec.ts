@@ -45,7 +45,7 @@ test('Fill username', async ({ page }) => {
     
 
     await page.waitForTimeout(2000);
-
+//
    // await page.screenshot({path: 'screenshot.png', fullPage: true});
     
     
