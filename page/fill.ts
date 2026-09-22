@@ -49,19 +49,19 @@ export class Fill {
         await this.datefiller1.fill('06/15/2023');
     }
     
-async uploadFile() {
-    await this.fileupload.setInputFiles('/Users/pramodh/Downloads/Pramodh_Reddy_Resume.pdf');
+// async uploadFile() {
+//     await this.fileupload.setInputFiles('/Users/pramodh/Downloads/Pramodh_Reddy_Resume.pdf');
 
 
-}
+// }
 
-async uploadMultipleFiles() {
-    await this.fileuploadmultiple.setInputFiles([
-        '/Users/pramodh/Downloads/Pramodh_Reddy_Resume.pdf',
-        '/Users/pramodh/Downloads/resume-68479fce-d6a1-43ae-a77f-7f7ec3fdb127.pdf'
-    ]);
+// async uploadMultipleFiles() {
+//     await this.fileuploadmultiple.setInputFiles([
+//         '/Users/pramodh/Downloads/Pramodh_Reddy_Resume.pdf',
+//         '/Users/pramodh/Downloads/resume-68479fce-d6a1-43ae-a77f-7f7ec3fdb127.pdf'
+//     ]);
 
-}
+// }
 async clickDynamicButton() {
     await this.dynamicbutton.click();
 }
