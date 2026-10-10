@@ -1,0 +1,2 @@
+confirm
+Dialog message: Press a button!

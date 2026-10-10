@@ -1,0 +1,2 @@
+Number of rows: 7
+Total Price: 7100
